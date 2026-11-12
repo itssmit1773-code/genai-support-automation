@@ -1,5 +1,7 @@
 # GenAI Support Automation: Feasibility, Risk & ROI
 
+[Open interactive dashboard](https://a8xrb8vcshwhvz3ekjqkmt.streamlit.app/) · [Read the portfolio case study](https://itssmit1773-code.github.io/portfolio/support-automation.html)
+
 **Decision:** Start with a Reporting-only pilot of agent-reviewed drafts for report exports and paused schedules. Evaluate receipt and pending-invite drafts in a later scope review. Keep customer-facing auto-send off while measuring draft usefulness, reviewer catches, and recoverable support time.
 
 RelayDesk is a fictional B2B SaaS reporting platform. This case study uses 12,000 transparently synthetic tickets to decide where automation earns its place in a support workflow. The local prototype selects an approved knowledge-base article, applies escalation rules, and compares four ways to handle the same cases.
