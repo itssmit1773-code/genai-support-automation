@@ -1,0 +1,1211 @@
+{
+  "synthetic": true,
+  "operations": {
+    "tickets": 12000,
+    "months": 3,
+    "avg_handle_min": 15.157045,
+    "sla_pct": 84.13333333333334,
+    "resolution_pct": 91.325,
+    "reply_p90_min": 349.184,
+    "labor_usd": 109130.724
+  },
+  "fit": {
+    "calibration": [
+      {
+        "raw_lower_bound": 0,
+        "n": 0,
+        "empirical_accuracy": null,
+        "calibrated_score": 0
+      },
+      {
+        "raw_lower_bound": 0.15,
+        "n": 1,
+        "empirical_accuracy": 0,
+        "calibrated_score": 0.3333333333333333
+      },
+      {
+        "raw_lower_bound": 0.35,
+        "n": 48,
+        "empirical_accuracy": 0.16666666666666666,
+        "calibrated_score": 0.18
+      },
+      {
+        "raw_lower_bound": 0.6,
+        "n": 181,
+        "empirical_accuracy": 0.574585635359116,
+        "calibrated_score": 0.5737704918032787
+      },
+      {
+        "raw_lower_bound": 0.8,
+        "n": 466,
+        "empirical_accuracy": 0.9313304721030042,
+        "calibrated_score": 0.9294871794871795
+      },
+      {
+        "raw_lower_bound": 0.95,
+        "n": 1104,
+        "empirical_accuracy": 0.9710144927536232,
+        "calibrated_score": 0.9701627486437613
+      }
+    ],
+    "selection": [
+      {
+        "threshold": 0.5,
+        "reviews": 883,
+        "safe_precision": 0.984144960362401,
+        "eligible": true
+      },
+      {
+        "threshold": 0.6,
+        "reviews": 876,
+        "safe_precision": 0.9920091324200914,
+        "eligible": true
+      },
+      {
+        "threshold": 0.7,
+        "reviews": 876,
+        "safe_precision": 0.9920091324200914,
+        "eligible": true
+      },
+      {
+        "threshold": 0.75,
+        "reviews": 876,
+        "safe_precision": 0.9920091324200914,
+        "eligible": true
+      },
+      {
+        "threshold": 0.8,
+        "reviews": 876,
+        "safe_precision": 0.9920091324200914,
+        "eligible": true
+      },
+      {
+        "threshold": 0.85,
+        "reviews": 876,
+        "safe_precision": 0.9920091324200914,
+        "eligible": true
+      },
+      {
+        "threshold": 0.9,
+        "reviews": 876,
+        "safe_precision": 0.9920091324200914,
+        "eligible": true
+      },
+      {
+        "threshold": 0.95,
+        "reviews": 766,
+        "safe_precision": 0.9921671018276762,
+        "eligible": true
+      }
+    ],
+    "threshold": 0.5
+  },
+  "test_calibration": {
+    "scored": 3850,
+    "unscored": 150,
+    "intent_accuracy": 0.7483116883116883,
+    "raw_brier": 0.1293437740380131,
+    "calibrated_brier": 0.11497375915034216,
+    "bins": [
+      {
+        "raw_lower_bound": 0.15,
+        "n": 171,
+        "mean_raw": 0.2534799980036322,
+        "mean_calibrated": 0.3333333333333333,
+        "accuracy": 0
+      },
+      {
+        "raw_lower_bound": 0.35,
+        "n": 147,
+        "mean_raw": 0.5139598399190306,
+        "mean_calibrated": 0.18,
+        "accuracy": 0.14965986394557823
+      },
+      {
+        "raw_lower_bound": 0.6,
+        "n": 647,
+        "mean_raw": 0.6860502187694768,
+        "mean_calibrated": 0.5737704918032787,
+        "accuracy": 0.33539412673879443
+      },
+      {
+        "raw_lower_bound": 0.8,
+        "n": 776,
+        "mean_raw": 0.9027635169249502,
+        "mean_calibrated": 0.9294871794871795,
+        "accuracy": 0.8350515463917526
+      },
+      {
+        "raw_lower_bound": 0.95,
+        "n": 2109,
+        "mean_raw": 0.9923853610671987,
+        "mean_calibrated": 0.9701627486437613,
+        "accuracy": 0.9454717875770507
+      }
+    ]
+  },
+  "benchmark": {
+    "Human baseline": {
+      "tickets": 4000,
+      "auto": 0,
+      "review": 0,
+      "human": 4000,
+      "offered": 0,
+      "offer_accuracy": null,
+      "safe_offer_precision": null,
+      "offer_precision_interval": [
+        null,
+        null
+      ],
+      "protected": 1914,
+      "unsafe_auto": 0,
+      "unsafe_rate_protected": 0.0,
+      "unsafe_interval": [
+        0,
+        0.002003011668678848
+      ],
+      "bad_auto": 0,
+      "protected_review": 0,
+      "baseline_minutes": 15.30028,
+      "modeled_minutes": 15.30028,
+      "reply_p90_min": 357.062,
+      "sla_pct": 84.025
+    },
+    "Rules only": {
+      "tickets": 4000,
+      "auto": 494,
+      "review": 0,
+      "human": 3506,
+      "offered": 494,
+      "offer_accuracy": 0.979757085020243,
+      "safe_offer_precision": 0.9534412955465587,
+      "offer_precision_interval": [
+        0.931107018030513,
+        0.9687778590973173
+      ],
+      "protected": 1914,
+      "unsafe_auto": 23,
+      "unsafe_rate_protected": 0.012016718913270637,
+      "unsafe_interval": [
+        0.008020648129050978,
+        0.017967662109764117
+      ],
+      "bad_auto": 23,
+      "protected_review": 0,
+      "baseline_minutes": 15.30028,
+      "modeled_minutes": 14.41943,
+      "reply_p90_min": 319.66099999999994,
+      "sla_pct": 86.0
+    },
+    "AI assist": {
+      "tickets": 4000,
+      "auto": 0,
+      "review": 2100,
+      "human": 1900,
+      "offered": 2100,
+      "offer_accuracy": 0.8733333333333333,
+      "safe_offer_precision": 0.8561904761904762,
+      "offer_precision_interval": [
+        0.8405318930909639,
+        0.8705483043867402
+      ],
+      "protected": 1914,
+      "unsafe_auto": 0,
+      "unsafe_rate_protected": 0.0,
+      "unsafe_interval": [
+        0,
+        0.002003011668678848
+      ],
+      "bad_auto": 0,
+      "protected_review": 73,
+      "baseline_minutes": 15.30028,
+      "modeled_minutes": 13.86965135,
+      "reply_p90_min": 354.4207600000001,
+      "sla_pct": 84.05
+    },
+    "Full automation": {
+      "tickets": 4000,
+      "auto": 3850,
+      "review": 0,
+      "human": 150,
+      "offered": 3850,
+      "offer_accuracy": 0.7483116883116883,
+      "safe_offer_precision": 0.4812987012987013,
+      "offer_precision_interval": [
+        0.4655424109171064,
+        0.49709227410077056
+      ],
+      "protected": 1914,
+      "unsafe_auto": 1764,
+      "unsafe_rate_protected": 0.9216300940438872,
+      "unsafe_interval": [
+        0.9087279156219958,
+        0.9328432124693065
+      ],
+      "bad_auto": 1997,
+      "protected_review": 0,
+      "baseline_minutes": 15.30028,
+      "modeled_minutes": 15.69811,
+      "reply_p90_min": 0.04166666666666667,
+      "sla_pct": 99.52499999999999
+    }
+  },
+  "economics": {
+    "Human baseline": {
+      "steady_net_monthly": 0.0,
+      "steady_hours_monthly": 0.0,
+      "steady_break_even_volume": null,
+      "year1_break_even_volume": null,
+      "year1_cost": 0.0,
+      "year1_value": 0.0,
+      "year1_net": 0.0,
+      "year1_roi": null,
+      "year2_cumulative": 0.0,
+      "payback_month": 0,
+      "cash_flows": [
+        {
+          "month": 0,
+          "adopted_tickets": 0,
+          "capacity_hours": 0,
+          "realized_value": 0,
+          "run_cost": 0,
+          "net": 0,
+          "cumulative": 0
+        },
+        {
+          "month": 1,
+          "adopted_tickets": 850.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 2,
+          "adopted_tickets": 1700.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 3,
+          "adopted_tickets": 2550.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 4,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 5,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 6,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 7,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 8,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 9,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 10,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 11,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 12,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 13,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 14,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 15,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 16,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 17,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 18,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 19,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 20,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 21,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 22,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 23,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        },
+        {
+          "month": 24,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 0.0,
+          "realized_value": 0.0,
+          "run_cost": 0.0,
+          "net": 0.0,
+          "cumulative": 0.0
+        }
+      ]
+    },
+    "Rules only": {
+      "steady_net_monthly": 1031.007100000001,
+      "steady_hours_monthly": 49.91483333333337,
+      "steady_break_even_volume": 417.0260982751537,
+      "year1_break_even_volume": 1204.7420616837774,
+      "year1_cost": 3818.5,
+      "year1_value": 12264.07455000001,
+      "year1_net": 8445.574550000008,
+      "year1_roi": 2.2117518790100847,
+      "year2_cumulative": 20817.659750000024,
+      "payback_month": 4,
+      "cash_flows": [
+        {
+          "month": 0,
+          "adopted_tickets": 0,
+          "capacity_hours": 0,
+          "realized_value": 0,
+          "run_cost": 0,
+          "net": -2200,
+          "cumulative": -2200
+        },
+        {
+          "month": 1,
+          "adopted_tickets": 850.0,
+          "capacity_hours": 12.478708333333342,
+          "realized_value": 292.00177500000024,
+          "run_cost": 124.25,
+          "net": 167.75177500000024,
+          "cumulative": -2032.2482249999998
+        },
+        {
+          "month": 2,
+          "adopted_tickets": 1700.0,
+          "capacity_hours": 24.957416666666685,
+          "realized_value": 584.0035500000005,
+          "run_cost": 128.5,
+          "net": 455.5035500000005,
+          "cumulative": -1576.7446749999995
+        },
+        {
+          "month": 3,
+          "adopted_tickets": 2550.0,
+          "capacity_hours": 37.436125000000025,
+          "realized_value": 876.0053250000007,
+          "run_cost": 132.75,
+          "net": 743.2553250000007,
+          "cumulative": -833.4893499999988
+        },
+        {
+          "month": 4,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 49.91483333333337,
+          "realized_value": 1168.007100000001,
+          "run_cost": 137.0,
+          "net": 1031.007100000001,
+          "cumulative": 197.51775000000214
+        },
+        {
+          "month": 5,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 49.91483333333337,
+          "realized_value": 1168.007100000001,
+          "run_cost": 137.0,
+          "net": 1031.007100000001,
+          "cumulative": 1228.524850000003
+        },
+        {
+          "month": 6,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 49.91483333333337,
+          "realized_value": 1168.007100000001,
+          "run_cost": 137.0,
+          "net": 1031.007100000001,
+          "cumulative": 2259.531950000004
+        },
+        {
+          "month": 7,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 49.91483333333337,
+          "realized_value": 1168.007100000001,
+          "run_cost": 137.0,
+          "net": 1031.007100000001,
+          "cumulative": 3290.539050000005
+        },
+        {
+          "month": 8,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 49.91483333333337,
+          "realized_value": 1168.007100000001,
+          "run_cost": 137.0,
+          "net": 1031.007100000001,
+          "cumulative": 4321.546150000006
+        },
+        {
+          "month": 9,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 49.91483333333337,
+          "realized_value": 1168.007100000001,
+          "run_cost": 137.0,
+          "net": 1031.007100000001,
+          "cumulative": 5352.553250000006
+        },
+        {
+          "month": 10,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 49.91483333333337,
+          "realized_value": 1168.007100000001,
+          "run_cost": 137.0,
+          "net": 1031.007100000001,
+          "cumulative": 6383.560350000007
+        },
+        {
+          "month": 11,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 49.91483333333337,
+          "realized_value": 1168.007100000001,
+          "run_cost": 137.0,
+          "net": 1031.007100000001,
+          "cumulative": 7414.567450000008
+        },
+        {
+          "month": 12,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 49.91483333333337,
+          "realized_value": 1168.007100000001,
+          "run_cost": 137.0,
+          "net": 1031.007100000001,
+          "cumulative": 8445.574550000008
+        },
+        {
+          "month": 13,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 49.91483333333337,
+          "realized_value": 1168.007100000001,
+          "run_cost": 137.0,
+          "net": 1031.007100000001,
+          "cumulative": 9476.58165000001
+        },
+        {
+          "month": 14,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 49.91483333333337,
+          "realized_value": 1168.007100000001,
+          "run_cost": 137.0,
+          "net": 1031.007100000001,
+          "cumulative": 10507.58875000001
+        },
+        {
+          "month": 15,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 49.91483333333337,
+          "realized_value": 1168.007100000001,
+          "run_cost": 137.0,
+          "net": 1031.007100000001,
+          "cumulative": 11538.59585000001
+        },
+        {
+          "month": 16,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 49.91483333333337,
+          "realized_value": 1168.007100000001,
+          "run_cost": 137.0,
+          "net": 1031.007100000001,
+          "cumulative": 12569.602950000011
+        },
+        {
+          "month": 17,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 49.91483333333337,
+          "realized_value": 1168.007100000001,
+          "run_cost": 137.0,
+          "net": 1031.007100000001,
+          "cumulative": 13600.610050000012
+        },
+        {
+          "month": 18,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 49.91483333333337,
+          "realized_value": 1168.007100000001,
+          "run_cost": 137.0,
+          "net": 1031.007100000001,
+          "cumulative": 14631.617150000013
+        },
+        {
+          "month": 19,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 49.91483333333337,
+          "realized_value": 1168.007100000001,
+          "run_cost": 137.0,
+          "net": 1031.007100000001,
+          "cumulative": 15662.624250000013
+        },
+        {
+          "month": 20,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 49.91483333333337,
+          "realized_value": 1168.007100000001,
+          "run_cost": 137.0,
+          "net": 1031.007100000001,
+          "cumulative": 16693.631350000014
+        },
+        {
+          "month": 21,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 49.91483333333337,
+          "realized_value": 1168.007100000001,
+          "run_cost": 137.0,
+          "net": 1031.007100000001,
+          "cumulative": 17724.638450000017
+        },
+        {
+          "month": 22,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 49.91483333333337,
+          "realized_value": 1168.007100000001,
+          "run_cost": 137.0,
+          "net": 1031.007100000001,
+          "cumulative": 18755.64555000002
+        },
+        {
+          "month": 23,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 49.91483333333337,
+          "realized_value": 1168.007100000001,
+          "run_cost": 137.0,
+          "net": 1031.007100000001,
+          "cumulative": 19786.652650000022
+        },
+        {
+          "month": 24,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 49.91483333333337,
+          "realized_value": 1168.007100000001,
+          "run_cost": 137.0,
+          "net": 1031.007100000001,
+          "cumulative": 20817.659750000024
+        }
+      ]
+    },
+    "AI assist": {
+      "steady_net_monthly": 1548.013589900001,
+      "steady_hours_monthly": 81.06895683333339,
+      "steady_break_even_volume": 517.4313656690006,
+      "year1_break_even_volume": 1491.2307681392317,
+      "year1_cost": 8209.5,
+      "year1_value": 19918.642693950012,
+      "year1_net": 11709.142693950014,
+      "year1_roi": 1.426291819714966,
+      "year2_cumulative": 30285.30577275003,
+      "payback_month": 5,
+      "cash_flows": [
+        {
+          "month": 0,
+          "adopted_tickets": 0,
+          "capacity_hours": 0,
+          "realized_value": 0,
+          "run_cost": 0,
+          "net": -4200,
+          "cumulative": -4200
+        },
+        {
+          "month": 1,
+          "adopted_tickets": 850.0,
+          "capacity_hours": 20.267239208333347,
+          "realized_value": 474.2533974750003,
+          "run_cost": 259.75,
+          "net": 214.50339747500033,
+          "cumulative": -3985.4966025249996
+        },
+        {
+          "month": 2,
+          "adopted_tickets": 1700.0,
+          "capacity_hours": 40.534478416666694,
+          "realized_value": 948.5067949500007,
+          "run_cost": 289.5,
+          "net": 659.0067949500007,
+          "cumulative": -3326.489807574999
+        },
+        {
+          "month": 3,
+          "adopted_tickets": 2550.0,
+          "capacity_hours": 60.80171762500004,
+          "realized_value": 1422.760192425001,
+          "run_cost": 319.25,
+          "net": 1103.510192425001,
+          "cumulative": -2222.9796151499977
+        },
+        {
+          "month": 4,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 81.06895683333339,
+          "realized_value": 1897.0135899000013,
+          "run_cost": 349.0,
+          "net": 1548.0135899000013,
+          "cumulative": -674.9660252499964
+        },
+        {
+          "month": 5,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 81.06895683333339,
+          "realized_value": 1897.0135899000013,
+          "run_cost": 349.0,
+          "net": 1548.0135899000013,
+          "cumulative": 873.0475646500049
+        },
+        {
+          "month": 6,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 81.06895683333339,
+          "realized_value": 1897.0135899000013,
+          "run_cost": 349.0,
+          "net": 1548.0135899000013,
+          "cumulative": 2421.061154550006
+        },
+        {
+          "month": 7,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 81.06895683333339,
+          "realized_value": 1897.0135899000013,
+          "run_cost": 349.0,
+          "net": 1548.0135899000013,
+          "cumulative": 3969.0747444500075
+        },
+        {
+          "month": 8,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 81.06895683333339,
+          "realized_value": 1897.0135899000013,
+          "run_cost": 349.0,
+          "net": 1548.0135899000013,
+          "cumulative": 5517.088334350009
+        },
+        {
+          "month": 9,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 81.06895683333339,
+          "realized_value": 1897.0135899000013,
+          "run_cost": 349.0,
+          "net": 1548.0135899000013,
+          "cumulative": 7065.101924250011
+        },
+        {
+          "month": 10,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 81.06895683333339,
+          "realized_value": 1897.0135899000013,
+          "run_cost": 349.0,
+          "net": 1548.0135899000013,
+          "cumulative": 8613.115514150011
+        },
+        {
+          "month": 11,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 81.06895683333339,
+          "realized_value": 1897.0135899000013,
+          "run_cost": 349.0,
+          "net": 1548.0135899000013,
+          "cumulative": 10161.129104050013
+        },
+        {
+          "month": 12,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 81.06895683333339,
+          "realized_value": 1897.0135899000013,
+          "run_cost": 349.0,
+          "net": 1548.0135899000013,
+          "cumulative": 11709.142693950014
+        },
+        {
+          "month": 13,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 81.06895683333339,
+          "realized_value": 1897.0135899000013,
+          "run_cost": 349.0,
+          "net": 1548.0135899000013,
+          "cumulative": 13257.156283850016
+        },
+        {
+          "month": 14,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 81.06895683333339,
+          "realized_value": 1897.0135899000013,
+          "run_cost": 349.0,
+          "net": 1548.0135899000013,
+          "cumulative": 14805.169873750017
+        },
+        {
+          "month": 15,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 81.06895683333339,
+          "realized_value": 1897.0135899000013,
+          "run_cost": 349.0,
+          "net": 1548.0135899000013,
+          "cumulative": 16353.183463650019
+        },
+        {
+          "month": 16,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 81.06895683333339,
+          "realized_value": 1897.0135899000013,
+          "run_cost": 349.0,
+          "net": 1548.0135899000013,
+          "cumulative": 17901.19705355002
+        },
+        {
+          "month": 17,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 81.06895683333339,
+          "realized_value": 1897.0135899000013,
+          "run_cost": 349.0,
+          "net": 1548.0135899000013,
+          "cumulative": 19449.21064345002
+        },
+        {
+          "month": 18,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 81.06895683333339,
+          "realized_value": 1897.0135899000013,
+          "run_cost": 349.0,
+          "net": 1548.0135899000013,
+          "cumulative": 20997.22423335002
+        },
+        {
+          "month": 19,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 81.06895683333339,
+          "realized_value": 1897.0135899000013,
+          "run_cost": 349.0,
+          "net": 1548.0135899000013,
+          "cumulative": 22545.237823250023
+        },
+        {
+          "month": 20,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 81.06895683333339,
+          "realized_value": 1897.0135899000013,
+          "run_cost": 349.0,
+          "net": 1548.0135899000013,
+          "cumulative": 24093.251413150025
+        },
+        {
+          "month": 21,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 81.06895683333339,
+          "realized_value": 1897.0135899000013,
+          "run_cost": 349.0,
+          "net": 1548.0135899000013,
+          "cumulative": 25641.265003050026
+        },
+        {
+          "month": 22,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 81.06895683333339,
+          "realized_value": 1897.0135899000013,
+          "run_cost": 349.0,
+          "net": 1548.0135899000013,
+          "cumulative": 27189.278592950028
+        },
+        {
+          "month": 23,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 81.06895683333339,
+          "realized_value": 1897.0135899000013,
+          "run_cost": 349.0,
+          "net": 1548.0135899000013,
+          "cumulative": 28737.29218285003
+        },
+        {
+          "month": 24,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": 81.06895683333339,
+          "realized_value": 1897.0135899000013,
+          "run_cost": 349.0,
+          "net": 1548.0135899000013,
+          "cumulative": 30285.30577275003
+        }
+      ]
+    },
+    "Full automation": {
+      "steady_net_monthly": -1558.573199999998,
+      "steady_hours_monthly": -22.543699999999944,
+      "steady_break_even_volume": null,
+      "year1_break_even_volume": null,
+      "year1_cost": 16283.5,
+      "year1_value": -8521.51859999998,
+      "year1_net": -24805.01859999999,
+      "year1_roi": -1.523322295575275,
+      "year2_cumulative": -43507.896999999975,
+      "payback_month": null,
+      "cash_flows": [
+        {
+          "month": 0,
+          "adopted_tickets": 0,
+          "capacity_hours": 0,
+          "realized_value": 0,
+          "run_cost": 0,
+          "net": -7600,
+          "cumulative": -7600
+        },
+        {
+          "month": 1,
+          "adopted_tickets": 850.0,
+          "capacity_hours": -5.635924999999986,
+          "realized_value": -202.8932999999995,
+          "run_cost": 606.75,
+          "net": -809.6432999999995,
+          "cumulative": -8409.6433
+        },
+        {
+          "month": 2,
+          "adopted_tickets": 1700.0,
+          "capacity_hours": -11.271849999999972,
+          "realized_value": -405.786599999999,
+          "run_cost": 653.5,
+          "net": -1059.286599999999,
+          "cumulative": -9468.9299
+        },
+        {
+          "month": 3,
+          "adopted_tickets": 2550.0,
+          "capacity_hours": -16.90777499999996,
+          "realized_value": -608.6798999999985,
+          "run_cost": 700.25,
+          "net": -1308.9298999999985,
+          "cumulative": -10777.859799999998
+        },
+        {
+          "month": 4,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": -22.543699999999944,
+          "realized_value": -811.573199999998,
+          "run_cost": 747.0,
+          "net": -1558.573199999998,
+          "cumulative": -12336.432999999997
+        },
+        {
+          "month": 5,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": -22.543699999999944,
+          "realized_value": -811.573199999998,
+          "run_cost": 747.0,
+          "net": -1558.573199999998,
+          "cumulative": -13895.006199999996
+        },
+        {
+          "month": 6,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": -22.543699999999944,
+          "realized_value": -811.573199999998,
+          "run_cost": 747.0,
+          "net": -1558.573199999998,
+          "cumulative": -15453.579399999995
+        },
+        {
+          "month": 7,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": -22.543699999999944,
+          "realized_value": -811.573199999998,
+          "run_cost": 747.0,
+          "net": -1558.573199999998,
+          "cumulative": -17012.152599999994
+        },
+        {
+          "month": 8,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": -22.543699999999944,
+          "realized_value": -811.573199999998,
+          "run_cost": 747.0,
+          "net": -1558.573199999998,
+          "cumulative": -18570.725799999993
+        },
+        {
+          "month": 9,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": -22.543699999999944,
+          "realized_value": -811.573199999998,
+          "run_cost": 747.0,
+          "net": -1558.573199999998,
+          "cumulative": -20129.29899999999
+        },
+        {
+          "month": 10,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": -22.543699999999944,
+          "realized_value": -811.573199999998,
+          "run_cost": 747.0,
+          "net": -1558.573199999998,
+          "cumulative": -21687.87219999999
+        },
+        {
+          "month": 11,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": -22.543699999999944,
+          "realized_value": -811.573199999998,
+          "run_cost": 747.0,
+          "net": -1558.573199999998,
+          "cumulative": -23246.44539999999
+        },
+        {
+          "month": 12,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": -22.543699999999944,
+          "realized_value": -811.573199999998,
+          "run_cost": 747.0,
+          "net": -1558.573199999998,
+          "cumulative": -24805.01859999999
+        },
+        {
+          "month": 13,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": -22.543699999999944,
+          "realized_value": -811.573199999998,
+          "run_cost": 747.0,
+          "net": -1558.573199999998,
+          "cumulative": -26363.591799999987
+        },
+        {
+          "month": 14,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": -22.543699999999944,
+          "realized_value": -811.573199999998,
+          "run_cost": 747.0,
+          "net": -1558.573199999998,
+          "cumulative": -27922.164999999986
+        },
+        {
+          "month": 15,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": -22.543699999999944,
+          "realized_value": -811.573199999998,
+          "run_cost": 747.0,
+          "net": -1558.573199999998,
+          "cumulative": -29480.738199999985
+        },
+        {
+          "month": 16,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": -22.543699999999944,
+          "realized_value": -811.573199999998,
+          "run_cost": 747.0,
+          "net": -1558.573199999998,
+          "cumulative": -31039.311399999984
+        },
+        {
+          "month": 17,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": -22.543699999999944,
+          "realized_value": -811.573199999998,
+          "run_cost": 747.0,
+          "net": -1558.573199999998,
+          "cumulative": -32597.884599999983
+        },
+        {
+          "month": 18,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": -22.543699999999944,
+          "realized_value": -811.573199999998,
+          "run_cost": 747.0,
+          "net": -1558.573199999998,
+          "cumulative": -34156.45779999998
+        },
+        {
+          "month": 19,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": -22.543699999999944,
+          "realized_value": -811.573199999998,
+          "run_cost": 747.0,
+          "net": -1558.573199999998,
+          "cumulative": -35715.03099999998
+        },
+        {
+          "month": 20,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": -22.543699999999944,
+          "realized_value": -811.573199999998,
+          "run_cost": 747.0,
+          "net": -1558.573199999998,
+          "cumulative": -37273.60419999998
+        },
+        {
+          "month": 21,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": -22.543699999999944,
+          "realized_value": -811.573199999998,
+          "run_cost": 747.0,
+          "net": -1558.573199999998,
+          "cumulative": -38832.17739999998
+        },
+        {
+          "month": 22,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": -22.543699999999944,
+          "realized_value": -811.573199999998,
+          "run_cost": 747.0,
+          "net": -1558.573199999998,
+          "cumulative": -40390.75059999998
+        },
+        {
+          "month": 23,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": -22.543699999999944,
+          "realized_value": -811.573199999998,
+          "run_cost": 747.0,
+          "net": -1558.573199999998,
+          "cumulative": -41949.32379999998
+        },
+        {
+          "month": 24,
+          "adopted_tickets": 3400.0,
+          "capacity_hours": -22.543699999999944,
+          "realized_value": -811.573199999998,
+          "run_cost": 747.0,
+          "net": -1558.573199999998,
+          "cumulative": -43507.896999999975
+        }
+      ]
+    }
+  }
+}

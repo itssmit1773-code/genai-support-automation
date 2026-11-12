@@ -1,0 +1,11 @@
+[theme]
+base = "light"
+primaryColor = "#08776e"
+backgroundColor = "#f6f8fb"
+secondaryBackgroundColor = "#eaf0f5"
+textColor = "#152a3a"
+font = "sans-serif"
+chartCategoricalColors = ["#08776e", "#557498", "#bf794b", "#8b5d77"]
+
+[browser]
+gatherUsageStats = false

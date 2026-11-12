@@ -1,0 +1,3 @@
+segment,tickets,avg_handle_min,avg_first_reply_min,avg_resolution_hours,sla_met,sla_pct,resolved_7d,resolution_pct,reopen_pct,labor_usd
+Standard,9321,15.16,169.61,6.91,8390,90.01,8546,91.69,8.29,84787.35
+Enterprise,2679,15.14,125.86,6.41,1706,63.68,2413,90.07,9.93,24343.37

@@ -1,0 +1,4 @@
+segment,tickets,avg_handle_min,avg_first_reply_min,avg_resolution_hours,sla_met,sla_pct,resolved_7d,resolution_pct,reopen_pct,labor_usd
+Low,8499,9.32,186.02,6.02,7237,85.15,7928,93.28,6.71,47505.2
+High,2193,31.65,42.7,10.12,1763,80.39,1817,82.85,17.1,41646.19
+Medium,1308,25.46,186.15,6.27,1096,83.79,1214,92.81,7.19,19979.34

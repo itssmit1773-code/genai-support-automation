@@ -1,0 +1,28 @@
+{
+  "seed": 731,
+  "shared": {
+    "monthly_volume": 4000,
+    "hourly_rate": 36,
+    "realization": 0.65,
+    "adoption": 0.85,
+    "ramp_months": 4
+  },
+  "policy_costs": {
+    "Human baseline": {"setup": 0, "fixed_monthly": 0, "processing_cost": 0},
+    "Rules only": {"setup": 2200, "fixed_monthly": 120, "processing_cost": 0.005},
+    "AI assist": {"setup": 4200, "fixed_monthly": 230, "processing_cost": 0.035},
+    "Full automation": {"setup": 7600, "fixed_monthly": 560, "processing_cost": 0.055}
+  },
+  "replay": {
+    "review_speedup": 0.42,
+    "bad_review_minutes": 2,
+    "auto_audit_minutes": 0.6,
+    "bad_auto_minutes": 8,
+    "automation_seconds": {
+      "Human baseline": 0,
+      "Rules only": 0.3,
+      "AI assist": 2.5,
+      "Full automation": 2.5
+    }
+  }
+}

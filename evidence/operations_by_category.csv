@@ -1,0 +1,6 @@
+segment,tickets,avg_handle_min,avg_first_reply_min,avg_resolution_hours,sla_met,sla_pct,resolved_7d,resolution_pct,reopen_pct,labor_usd
+Reporting,4484,8.73,183.23,5.87,3836,85.55,4178,93.18,6.82,23476.22
+Billing,3047,14.54,142.83,7.42,2539,83.33,2733,89.69,10.31,26586.94
+Workspace access,2632,17.19,149.93,7.19,2208,83.89,2406,91.41,8.55,27140.63
+Integrations,1308,25.46,186.15,6.27,1096,83.79,1214,92.81,7.19,19979.34
+Data governance,529,37.64,43.81,10.37,417,78.83,428,80.91,18.9,11947.6

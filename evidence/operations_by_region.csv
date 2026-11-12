@@ -1,0 +1,4 @@
+segment,tickets,avg_handle_min,avg_first_reply_min,avg_resolution_hours,sla_met,sla_pct,resolved_7d,resolution_pct,reopen_pct,labor_usd
+AMER,5369,15.2,155.62,6.76,4504,83.89,4895,91.17,8.81,48954.91
+EMEA,4118,14.88,150.42,6.49,3567,86.62,3784,91.89,8.09,36753.97
+APAC,2513,15.53,184.29,7.37,2025,80.58,2280,90.73,9.27,23421.85

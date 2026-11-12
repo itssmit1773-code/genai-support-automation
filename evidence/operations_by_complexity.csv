@@ -1,0 +1,4 @@
+segment,tickets,avg_handle_min,avg_first_reply_min,avg_resolution_hours,sla_met,sla_pct,resolved_7d,resolution_pct,reopen_pct,labor_usd
+Simple,7063,8.33,186.65,5.31,6013,85.13,6698,94.83,5.17,35310.55
+Complex,3245,26.78,86.97,10.68,2660,81.97,2666,82.16,17.78,52144.19
+Moderate,1692,21.35,187.69,5.58,1423,84.1,1595,94.27,5.73,21675.99
